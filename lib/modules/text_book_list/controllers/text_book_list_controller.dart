@@ -1,5 +1,3 @@
-import 'dart:collection';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -46,6 +44,28 @@ class TextBookListController extends GetxController
       color: Colors.blue,
       width: 100,
     ),
+  ];
+  List<Widget> tabBarTextWidgets = const [
+    Text('센 고2뭐시기'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
+    Text('블랙라벨 수2'),
   ];
 
   final isOpenMap = RxMap<String, bool>();
