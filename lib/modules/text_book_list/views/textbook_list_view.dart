@@ -15,8 +15,10 @@ class TextBookListView extends GetView<TextBookListController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
+      // 플로팅 액션 버튼
       floatingActionButton:
           FloatingActionButtonWithSendIcon(controller: controller),
+      // 앱바
       appBar: const SelfStudyAppBar(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

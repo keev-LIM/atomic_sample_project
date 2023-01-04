@@ -6,6 +6,7 @@ import '../molecules/self_study_list_detail_sub_title.dart';
 import '../molecules/self_study_list_detail_thumnail_images.dart';
 
 class SelfStudyListDetail extends StatelessWidget {
+  /// 하나의 타이틀과 서브타이틀들, 썸네일을 가진 카드 블록 위젯
   const SelfStudyListDetail({
     Key? key,
     required this.controller,

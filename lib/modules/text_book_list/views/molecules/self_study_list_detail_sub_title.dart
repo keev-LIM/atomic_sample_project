@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../../controllers/text_book_list_controller.dart';
 
 class SelfStudyListDetailSubTitle extends StatelessWidget {
+  /// 한 카드의 소제목 위젯
   const SelfStudyListDetailSubTitle({
     Key? key,
     required this.controller,
@@ -27,8 +28,10 @@ class SelfStudyListDetailSubTitle extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                // 소제목 위젯 텍스트
                 Obx(() => Text(
                     '${controller.subTitles[j]} p.${controller.tabIndex.value} ~ p${controller.tabIndex.value + 10}')),
+                // 소제목 위젯 아이콘
                 Obx(() => Icon(
                       controller.isOpenMap['$i$j'] != true
                           ? Icons.arrow_circle_down_outlined

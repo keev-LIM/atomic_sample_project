@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 /// [SelfStudyListDetailSubTitle]위젯을 탭하면 보이는 썸네일 이미지들의 위젯입니다.
 class SelfStudyListDetailThumnailImages extends StatelessWidget {
+  // 한 카드의 썸네일 이미지들 위젯
   const SelfStudyListDetailThumnailImages({
     super.key,
     required this.controller,
