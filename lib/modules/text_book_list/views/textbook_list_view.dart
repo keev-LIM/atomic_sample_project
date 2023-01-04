@@ -9,9 +9,12 @@ class TextBookListView extends GetView<TextBookListController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
+      // 플로팅 액션 버튼
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.send),
-          onPressed: controller.onFloatingActionButtonPressed),
+          onPressed: controller.onFloatingActionButtonPressed,
+          child: const Icon(Icons.send)),
+
+      /// 앱바 (자습 - 수학) 이런 형식
       appBar: AppBar(
         toolbarHeight: 48,
         centerTitle: false,
@@ -73,7 +76,7 @@ class TextBookListView extends GetView<TextBookListController> {
               ],
             ),
           ),
-          //
+          // 탭바
           Container(
             color: Colors.white,
             height: 30,
@@ -113,9 +116,12 @@ class TextBookListView extends GetView<TextBookListController> {
               indicatorSize: TabBarIndicatorSize.label,
             ),
           ),
+          // 아래 리스트 부분
           Expanded(
             child: ListView(shrinkWrap: true, children: [
               for (int i = 0; i < controller.titles.length; i++)
+
+                /// 제목 부분
                 Container(
                     padding: const EdgeInsets.fromLTRB(16, 20, 16, 20),
                     margin: const EdgeInsets.fromLTRB(16, 20, 16, 0),
@@ -133,6 +139,7 @@ class TextBookListView extends GetView<TextBookListController> {
                                 for (int j = 0;
                                     j < controller.subTitles.length;
                                     j++)
+                                  // 서브 타이틀 (1. 첫번째 단원 p.2~p12)
                                   Column(
                                     children: [
                                       Material(
@@ -164,6 +171,7 @@ class TextBookListView extends GetView<TextBookListController> {
                                           ),
                                         ),
                                       ),
+                                      // 서브타이틀을 터치하면 나오는 이미지 부분
                                       const SizedBox(height: 12),
                                       if (controller.isOpenMap['$i$j'] == true)
                                         AnimatedContainer(
